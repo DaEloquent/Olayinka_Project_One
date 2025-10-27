@@ -1,69 +1,49 @@
-# React + TypeScript + Vite
+# 👥 User Profile Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic and responsive User Profile Directory that fetches user data from an external API and displays them using clean, interactive profile cards.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Project Requirements
 
-## Expanding the ESLint configuration
+### ✅ Must-Have Features
+- Fetch user data from an API
+- Display users in a **profile card layout**
+- Show these fields:
+  - Full Name
+  - Email
+  - Company
+  - City
+- Responsive layout using **CSS Grid** or **Flexbox**
+- A **“View More / Details”** toggle for each card (e.g. phone, website)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🧩 Stretch Features (Optional but Recommended)
+- Search users by **name** or **username**
+- Filter users by **city** or **company**
+- Loading spinner + graceful error messages
+- Dark/Light Mode toggle
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧰 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🟦 Option Used:  
+✅ HTML  
+✅ Tailwind CSS  
+✅ JavaScript (Fetch API)
+✅ Typescript
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧪 How to Run Locally
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+# Clone repository
+git clone https://github.com/DaEloquent/Olayinka_Project_One.git
+
+# Navigate into folder
+cd Olayinka_Project_One
+
+# Open index.html in any browser (or use Live Server)
+
+
